@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter TOTP Code</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="totp-container">
+        <h2>Enter your OTP</h2>
+        <form method="POST">
+            <input type="text" name="totp" placeholder="Enter your OTP from the authenticator" required><br>
+            <input type="submit" value="Verify">
+        </form>
+        <p>{{ message }}</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+    function togglePasswordVisibility(passwordFieldId) {
+        var passwordField = document.getElementById(passwordFieldId);
+        if (passwordField.type === "password") {
+            passwordField.type = "text"; // Change to text to show password
+        } else {
+            passwordField.type = "password"; // Change back to password to hide
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Form</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" id="loginPassword" placeholder="Password" required><br>
+            <input type="checkbox" onclick="togglePasswordVisibility('loginPassword')"> Show Password<br>
+            <input type="submit" value="Login">
+        </form>
+        <p>{{ message }}</p>
+        <p><a href="{{ url_for('signup') }}">Don't have an account? Sign up here!</a></p>
+    </div>
+</body>
+</html>

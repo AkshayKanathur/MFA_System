@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan QR Code</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        img {
+            width: 120px; /* Set the width of the QR code image to 120px */
+            height: 120px; /* Set the height of the QR code image to 120px */
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="qr-container">
+        <h2>Scan this QR Code</h2>
+        <img src="{{ qr_code_uri }}" alt="QR Code" />
+        <p>Scan this QR code using your authenticator app.</p>
+        <form action="{{ url_for('enter_totp') }}" method="POST">
+            <input type="text" name="totp" placeholder="Enter TOTP Code" required><br>
+            <input type="submit" value="Next">
+        </form>
+        <p>{{ message }}</p>
+    </div>
+</body>
+</html>

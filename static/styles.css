@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container,
+.login-container,
+.qr-container,
+.totp-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p {
+    color: #ff0000;
+}
+
+/* Add this to styles.css */
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.home-container {
+    display: flex;
+    /* Align items in a flexible box */
+    flex-direction: column;
+    /* Arrange items in a column */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #f0f0f0;
+    /* Light gray background */
+    font-family: Arial, sans-serif;
+    /* Set font for the container */
+}
+
+.home-container h2 {
+    font-size: 2em;
+    /* Increase font size for the heading */
+    margin-bottom: 20px;
+    /* Space below the heading */
+}
+
+.home-container a {
+    margin: 10px 0;
+    /* Space between links */
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #007BFF;
+    /* Blue color for links */
+    font-size: 1.2em;
+    /* Set font size for links */
+}
+
+.home-container a:hover {
+    text-decoration: underline;
+    /* Underline links on hover */
+}
+
+.user-secret-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.user-secret-container h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.user-secret-container p {
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
