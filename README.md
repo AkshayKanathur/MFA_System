@@ -1,7 +1,7 @@
 
 # Multi-Factor Authentication System
 
-A Multi-Factor Authentication (MFA) system built using Flask, CSS, HTML, and JavaScript to enhance security by requiring multiple authentication factors.
+A team-developed MFA system built using Flask, HTML, CSS, and JavaScript, designed to enhance security by requiring multiple authentication factors. This system strengthens account protection by adding an extra layer of verification, reducing the risk of unauthorized access.
 
 ## Run Locally
 
